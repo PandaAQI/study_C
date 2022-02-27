@@ -1,0 +1,23 @@
+int main()
+for (int i=0;i<10000,i++)
+{
+//计算i的位数 n
+    int n=1;
+    int tem=i;
+    int sum=0
+    while(tem/=10)
+    {
+        n++；
+    }
+    // 2. 计算每一次n次方的和 sum
+    while(tmp)
+    {
+        sum+=pow(tmp%10,n)//pow(x,y) ,计算x的y次幂 头文件mathlob.h
+        tmp/=10
+    }
+    // 3.比较i==sum
+    if (i==sum)
+    {
+        printf("%d",i)
+    }
+}
