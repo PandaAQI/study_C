@@ -1,0 +1,19 @@
+#include<stdlib.h>
+void qsort(void *base, size_t nitems, size_t size, int (*compar)(const void *, const void*))
+
+/* base -- 指向要排序的数组的第一个元素的指针。
+   nitems -- 由 base 指向的数组中元素的个数。
+   size -- 数组中每个元素的大小，以字节为单位。
+   compar -- 用来比较两个元素的函数。*/
+qsort(arr,sz,4,compar())
+int campar_int(const void* e1,const void* e2)
+{
+    return *(int*)e1-*(int*)e2;
+}
+int campar_float(const void*e1,const void e2)
+{
+    return *(float*)e1-*(float*)e2
+}
+//void* 无类型指针 可以接受任意类型的指针
+//void* 不能进行解引用操作
+//void* 不能进行加减操作
