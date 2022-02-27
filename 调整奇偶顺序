@@ -1,0 +1,37 @@
+#include<stdio.h>
+void move(int arr[],int sz)
+int main()
+{
+	int arr[]={1,2,3,4,5}
+	int sz=sizeof(arr)/sizeof[0]
+	move(arr,sz);
+    print(arr,sz);
+    return 0;
+}
+//从左边找到一个偶数
+//从右边找到一个奇数
+//交换奇偶数
+void move(int arr[],int sz)
+{
+   while(le<ri)
+   {
+    int le=0;
+    int ri=sz-1
+    //从左边找偶数
+    while((le<ri)&&arr[le]%2==1)//le<ri确保数组中有奇数和偶数
+    {
+        le++;
+    }
+    //从右边找奇数
+    while((le<ri)&&arr[ri]%2==1)
+    {
+        ri--;
+    }
+    if(le<ri)
+    {
+        int tem =arr[le];
+        arr[le]=arr[ri];
+        arr[ri]=tem
+    }
+   }
+}
