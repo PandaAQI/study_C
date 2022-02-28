@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<string.h>
+#include<assert.h>
+int main()
+{
+    char arr1[]="abcdef";
+    char arr2[]="bcdefa";
+    int ret=is_left_move(arr1,arr2);
+    if(ret==1)
+        printf("yes\n")；
+    else
+        printf("no\n")
+    return 0；
+}
+void is_left_move(char* arr1,char* arr2)
+{
+    int len=strlen(arr1);
+    int i=0;
+    for(i=0;i<len,i++)
+    {
+        left_move(arr1,1)//进行一次左旋
+        strcmp(ret= strcmp(s1,s2));
+        if(ret==0)
+            return 1;
+        
+    }
+    return 0;
+}
+void le_mo(char*arr,int k)
+{
+   //三步翻转法
+   //逆序左边，逆序右边，逆序整体
+    assert(arr);
+    int len=strlen(arr);
+    assert(k<=len);
+    reverse(arr,arr+k-1);//逆序左边
+    reverse(arr+k，arr+len-1);//逆序右边
+    reverse(arr,arr+len-1);//逆序整体    
+}
+void reverse(char* le,char* right)
+{
+    assert(le!=NULL);
+    assert(ri!=NULL);
+    while(le<ri)
+    {
+        char tem=*le;
+        *le=*ri;
+        *ri=tem;
+        le++;
+        ri++;
+    }
+}
