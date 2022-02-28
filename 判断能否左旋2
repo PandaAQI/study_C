@@ -1,0 +1,35 @@
+//判断字符串a能否左旋得到字符串b
+#include<stdio.h>
+#include<string.h>
+#include<assert.h>
+
+int main()
+{
+    char arr1[]="abcdef";
+    char arr2[]="bcdefa";
+    int ret=is_left_move(arr1,arr2);
+    //1.在str1字符串中追加一个str1的字符串
+    //2判断str2指向的字符串是否是str1指向的字符串的子串
+    if(ret==1)
+        printf("yes\n");
+    else
+        printf("no\n");
+    return 0；
+}
+void is_left_move(char*arr1,char*arr2)
+{
+    int len1=strlen(arr1);
+    int len2=strlen(arr2);
+    if(len1!=len2)
+        return 0;
+    strncat(str1,str2,len);//char *strncat(char *dest, const char *src, size_t n) 把 src 所指向的字符串追加到 dest 所指向的字符串的结尾，直到 n 字符长度为止。
+    char*ret=strstr(arr1,arr2);//strstr(char*a,char*b)该函数返回在 a 中第一次出现 b 串的位置，如果未找到则返回 null。
+     if (ret==NULL)
+     {
+         return 0;
+     }
+    else
+    {
+        return 1;
+    }
+}
